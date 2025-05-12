@@ -42,11 +42,24 @@ const NavBar = () => {
           </ul>
         </nav>
 
-        <a href="#contact" className="contact-btn group">
-          <div className="inner">
-            <span>Contact me</span>
-          </div>
-        </a>
+        <div className="flex items-center gap-4">
+          <a href="#contact" className="contact-btn group">
+            <div className="inner">
+              <span>Contact me</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/tudor-manea" target="_blank" rel="noopener noreferrer" className="border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50">
+            <img src="/images/linkedin.png" alt="LinkedIn" className="inline-block" />
+          </a>
+          <a
+            href="https://github.com/tudor-manea"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 transform hover:bg-black-50"
+          >
+            <img src="/images/github.png" alt="GitHub" className="inline-block filter-invert brightness-85" />
+          </a>
+        </div>
       </div>
     </header>
   );
