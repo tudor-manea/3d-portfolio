@@ -1,7 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
 import { words } from "../constants";
 import HeroExperience from "../components/models/hero_models/HeroExperience";
@@ -16,15 +15,15 @@ const Hero = () => {
   });
 
   return (
-    <section id="hero" className="relative overflow-hidden">
+    <section id="hero" className="relative overflow-hidden pb-0">
       <div className="absolute top-0 left-0 z-10">
         <img src="/images/bg.png" alt="" />
       </div>
 
-      <div className="hero-layout">
+      <div className="hero-layout pb-0">
         {/* LEFT: Hero Content */}
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-          <div className="flex flex-col gap-7">
+        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5 pb-0 mb-0">
+          <div className="flex flex-col gap-7 pb-0 mb-0">
             <div className="hero-text">
               <h1>
                 Shaping
@@ -57,20 +56,18 @@ const Hero = () => {
             <Button
               text="See My Work"
               className="md:w-80 md:h-16 w-60 h-12"
-              id="counter"
+              id="work"
             />
           </div>
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
-        <figure>
+        <figure className="mb-0">
           <div className="hero-3d-layout">
             <HeroExperience />
           </div>
         </figure>
       </div>
-
-      <AnimatedCounter />
     </section>
   );
 };
