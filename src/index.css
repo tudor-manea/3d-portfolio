@@ -118,7 +118,15 @@ section {
     }
 
     .logo {
-      @apply text-white-50 text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105;
+      @apply flex items-center text-white-50 text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105;
+
+      .profile-picture {
+        width: 50px; /* Increased from 30px */
+        height: 50px; /* Increased from 30px */
+        border-radius: 50%;
+        margin-left: 10px; /* Changed from margin-right */
+        object-fit: cover;
+      }
     }
 
     nav.desktop {

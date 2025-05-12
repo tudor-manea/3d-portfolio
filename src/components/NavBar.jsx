@@ -27,6 +27,7 @@ const NavBar = () => {
       <div className="inner">
         <a href="#hero" className="logo">
           Tudor Manea
+          <img src="/images/profile_picture.png" alt="Tudor Manea" className="profile-picture" />
         </a>
 
         <nav className="desktop">

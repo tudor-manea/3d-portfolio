@@ -29,7 +29,7 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
+  { value: 5, suffix: "+", label: "Years of Experience" },
   { value: 200, suffix: "+", label: "Satisfied Clients" },
   { value: 108, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
@@ -84,21 +84,22 @@ const logoIconsList = [
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
-  },
-  {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Effective Communication",
+    desc: "Clearly conveying ideas and feedback across technical and non-technical stakeholders.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Team Collaboration",
+    desc: "Working seamlessly with cross-functional teams to drive projects forward.",
+  },
+  {
+    imgPath: "/images/seo.png",
+    title: "Problem Solving",
+    desc: "Analyzing challenges and devising efficient, scalable solutions under tight deadlines.",
   },
 ];
+
 
 const techStackImgs = [
   {

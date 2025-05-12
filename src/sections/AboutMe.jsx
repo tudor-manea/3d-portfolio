@@ -28,19 +28,23 @@ const AboutMe = () => {
               <AnimatedCounter
                 items={[experienceItem]}
                 id="experience-counter"
-                wrapperClassName="w-full"
-                gridClassName="grid grid-cols-1 gap-6"
+                wrapperClassName="w-full h-full" // Added h-full
+                gridClassName="grid grid-cols-1 gap-6 h-full" // Added h-full
               />
               {/* Education Card */}
-              <div className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center">
-                <h3 className="text-white text-2xl font-semibold mb-2">Education</h3>
-                <p className="text-white-50">B.Sc. Placeholder University</p>
-                <p className="text-white-50">M.Sc. Placeholder Institute</p>
+              <div className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center h-full"> {/* Added h-full */}
+                <div className="flex items-center mb-2">
+                  <img src="/images/logos/tcd.png" alt="TCD Logo" className="w-12 h-12 mr-3" /> {/* Added TCD logo */}
+                  <h3 className="text-white text-2xl font-semibold">Education</h3>
+                </div>
+                <p className="text-white-50">B.A. Computer Science (Major) and Business (Minor) 
+                  @ Trinity College Dublin</p>
               </div>
             </div>
             {/* About Me Text */}
             <p className="text-white-50 mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            I am a final-year Computer Science and Business student at Trinity College Dublin and currently a Software Engineering Intern at Amazon. My background 
+            spans full-stack development, algorithmic problem-solving and data-driven decision-making. I love to build projects and work on solutions to difficult problems.
             </p>
           </div>
         </div>
