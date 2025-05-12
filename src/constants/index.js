@@ -4,7 +4,7 @@ const navLinks = [
     link: "#about_me",
   },
   {
-    name: "Work",
+    name: "Projects",
     link: "#work",
   },
   // {
@@ -37,37 +37,48 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    name: "Amazon",
+    imgPath: "/images/logos/amazon.png", // Placeholder - please add amazon.png
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    name: "Microsoft",
+    imgPath: "/images/logos/microsoft.png", // Placeholder - please add microsoft.png
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    name: "Java",
+    imgPath: "/images/logos/java.svg", // Placeholder - please add java.svg or .png
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    name: "JavaScript",
+    imgPath: "/images/logos/javascript.svg", // Placeholder - please add javascript.svg or .png
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    name: "Kotlin",
+    imgPath: "/images/logos/kotlin.svg", // Placeholder - please add kotlin.svg or .png
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    name: "Docker",
+    imgPath: "/images/logos/docker.png", // Placeholder - please add docker.png
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    name: "C++",
+    imgPath: "/images/logos/cplusplus.svg", // Placeholder - please add cplusplus.svg or .png
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    name: "Python",
+    imgPath: "/images/logos/python.svg",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    name: "Node.js",
+    imgPath: "/images/logos/node.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    name: "SpringBoot",
+    imgPath: "/images/logos/springboot.svg", // Placeholder - please add springboot.svg or .png
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    name: "GitHub",
+    imgPath: "/images/logos/git.svg",
   },
 ];
 
@@ -114,34 +125,34 @@ const techStackImgs = [
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "Frontend",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
+    name: "Python",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
+    name: "Backend",
+    modelPath: "/models/java.glb",
+    scale: 1.3,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Collaborative Development",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
+  },
+  {
+    name: "DevOps",
+    modelPath: "/models/docker.glb",
+    scale: 1.2,
+    rotation: [0, 0, 0],
   },
 ];
 
@@ -263,6 +274,41 @@ const socialImgs = [
   },
 ];
 
+const projects = [
+  {
+    id: "project-1",
+    name: "SecuriDay",
+    description: "REMOTE WORK TOOLS - Better Communication with Each Other.",
+    image: "/images/project1.png",
+    githubUrl: "https://gitlab.scss.tcd.ie/tmanea/sweng25_group36-workdaysecurity",
+    liveDemoUrl: "https://your-live-demo/project-one",
+  },
+  {
+    id: "project-2",
+    name: "Cinema Guider",
+    description: "Stop Scrolling! I have something to tell you.",
+    image: "/images/project2.png",
+    githubUrl: "https://github.com/tudor-manea/cinema-guider-v2",
+    liveDemoUrl: "https://your-live-demo/project-two",
+  },
+  {
+    id: "project-3",
+    name: "Project Three",
+    description: "Available now on the app. Order using our app and receive 15% off.",
+    image: "/images/project3.png",
+    githubUrl: "https://github.com/your-repo/project-three",
+    liveDemoUrl: "https://your-live-demo/project-three",
+  },
+  {
+    id: "project-4",
+    name: "Project Three",
+    description: "Available now on the app. Order using our app and receive 15% off.",
+    image: "/images/project3.png",
+    githubUrl: "https://github.com/your-repo/project-three",
+    liveDemoUrl: "https://your-live-demo/project-three",
+  }
+];
+
 export {
   words,
   abilities,
@@ -275,4 +321,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  projects,
 };

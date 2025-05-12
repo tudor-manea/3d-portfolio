@@ -1,4 +1,3 @@
-import TitleHeader from "../components/TitleHeader"
 import AnimatedCounter from "../components/AnimatedCounter"
 import { counterItems } from "../constants"
 
@@ -7,8 +6,11 @@ const AboutMe = () => {
   return (
     <section id="about_me" className="px-5 md:px-10 mt-0">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-12 w-full">
-          <TitleHeader title="About Me" sub="Get to Know More" />
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-sm font-medium text-purple-400 uppercase tracking-wider mb-2">
+            Get to Know More
+          </h2>
+          <h1 className="text-4xl md:text-5xl font-bold text-white">About Me</h1>
         </div>
         <div className="w-full grid grid-cols-1 xl:grid-cols-12 gap-10">
           {/* LEFT: Profile Image */}

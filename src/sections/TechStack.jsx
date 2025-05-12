@@ -1,7 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-import TitleHeader from "../components/TitleHeader";
 import TechIconCardExperience from "../components/models/tech_logos/TechIconCardExperience";
 import { techStackIcons } from "../constants";
 // import { techStackImgs } from "../constants";
@@ -36,12 +35,14 @@ const TechStack = () => {
   });
 
   return (
-    <div id="skills" className="flex-center section-padding">
+    <div id="skills" className="flex-center ">
       <div className="w-full h-full md:px-10 px-5">
-        <TitleHeader
-          title="How I Can Contribute & My Key Skills"
-          sub="🤝 What I Bring to the Table"
-        />
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-sm font-medium text-purple-400 uppercase tracking-wider mb-2">
+            What I Bring to the Table
+          </h2>
+          <h1 className="text-4xl md:text-5xl font-bold text-white">How I Can Contribute & My Key Skills</h1>
+        </div>
         <div className="tech-grid">
           {/* Loop through the techStackIcons array and create a component for each item. 
               The key is set to the name of the tech stack icon, and the classnames are set to 

@@ -5,14 +5,20 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="flex flex-col justify-center">
-          <p>Terms & Conditions</p>
+          {/* <p>Terms & Conditions</p> */}
         </div>
         <div className="socials">
-          {socialImgs.map((socialImg, index) => (
-            <div key={index} className="icon">
-              <img src={socialImg.imgPath} alt="social icon" />
-            </div>
-          ))}
+          <a href="https://www.linkedin.com/in/tudor-manea" target="_blank" rel="noopener noreferrer" className="icon">
+            <img src="/images/linkedin.png" alt="LinkedIn" className="inline-block" />
+          </a>
+          <a
+            href="https://github.com/tudor-manea"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+          >
+            <img src="/images/github.png" alt="GitHub" className="inline-block filter-invert brightness-85" />
+          </a>
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end">
